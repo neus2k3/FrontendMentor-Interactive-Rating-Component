@@ -1,0 +1,139 @@
+html {
+    font-size: 15px;
+    font-family: 'Overpass';
+
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 97%, 53%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-color: var(--very-dark-blue);
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.content {
+    max-width: 28rem;
+    box-sizing: border-box;
+    background-color: hsla(213, 19%, 18%, 0.6);
+    color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.star-img {
+    background-color: hsla(217, 12%, 63%, 0.075);
+    padding: 1.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 3.5rem;
+    padding: 1.15rem 1.35rem;
+    border-radius: 100rem;
+}
+h1 {
+    color: var(--white);
+    margin-bottom: 0rem;
+    margin-top: 2.25rem;
+}
+
+p {
+    margin-top: 0.75rem;
+    line-height: 1.5rem;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.25rem;
+}
+
+.rating {
+    background-color: hsla(217, 12%, 63%, 0.075);
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    width: 3.5rem;
+    padding: 1rem 1.35rem;
+    border-radius: 10rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.submit-button {
+    border-style: none;
+    background-color: var(--orange);
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    border-radius: 10rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+.rating:hover {
+    background-color: var(--light-gray);
+    color: white;
+}
+
+.tq-content {
+    text-align: center;
+    display: none;
+}
+.tq-img {
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.tq-rating {
+    display: inline-block;
+    text-align: center;
+    color: var(--orange);
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: 0.5rem 1.0rem;
+    padding-top: 0.65rem;
+    border-radius: 10rem;
+    margin-top: 1.75rem;
+}
+.tq-header {
+    text-align: center;
+}
+.tq-text {
+    text-align: center;
+}
+
+@media all and (max-width: 450px){
+    .content {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
